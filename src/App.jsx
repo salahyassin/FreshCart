@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./Layouts/MainLayout";
 
@@ -31,7 +31,7 @@ import ResetPassward from "./pages/ResetPassward/ResetPassward";
 
 const queryClient = new QueryClient();
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "",
       element: <MainLayout />,
