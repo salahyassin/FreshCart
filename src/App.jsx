@@ -18,8 +18,8 @@ import { ToastContainer } from "react-toastify";
 import Address from "./pages/Address/Address";
 import Orders from "./pages/Orders/Orders";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Provider } from "react-redux";
-import { store } from "./Redux/Store";
+// import { Provider } from "react-redux";
+// import { store } from "./Redux/Store";
 import WishList from "./pages/WishList/WishList";
 import ForgotPassward from "./pages/ForgetPassward/ForgetPassward";
 import VerifyCode from "./pages/VerifyCode/VerifyCode";
@@ -146,7 +146,7 @@ function App() {
   ]);
   return (
     <>
-    <Provider store={store}>
+    {/* <Provider store={store}> */}
       <AuthContextProvider>
             <QueryClientProvider client={queryClient}>
                 <CounterContextProvider>
@@ -155,7 +155,7 @@ function App() {
                 </CounterContextProvider>
             </QueryClientProvider>
       </AuthContextProvider>
-    </Provider>
+    {/* </Provider> */}
     </>
   );
 }
