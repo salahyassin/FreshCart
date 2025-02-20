@@ -18,7 +18,7 @@ async function checkout(){
     headers:{
       token:localStorage.getItem("token")
     },params:{
-      url: "https://fresh-cart-liart.vercel.app/#/allorders"
+      url: "https://fresh-cart-liart.vercel.app/#"
     }
   })
   setIsLoading(false)
