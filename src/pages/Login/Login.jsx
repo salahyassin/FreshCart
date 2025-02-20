@@ -12,8 +12,8 @@ export default function Login() {
   const navigate= useNavigate()
 const {setIsLoggedIn}=  useContext(authContext)
   const initialValues={
-    email:"salahyassin142004@gmail.com",
-    password:"12345678",
+    email:"",
+    password:"",
   }
  function onSubmit(values){
     setIsLoading(true)

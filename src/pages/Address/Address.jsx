@@ -30,9 +30,9 @@ async function checkout(){
 
 
   const initialValues={
-    details: "elseada",
-    city: " elseada city",
-    phone:"01070805579"
+    details: "",
+    city: "",
+    phone:""
   }
  
   const validationSchema = Yup.object({
