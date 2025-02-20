@@ -7,7 +7,8 @@ import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 export default function Home() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
-
+    
+    
 
   useEffect(() => {
     getAllProducts();

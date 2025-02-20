@@ -18,7 +18,7 @@ async function checkout(){
     headers:{
       token:localStorage.getItem("token")
     },params:{
-      url: "http://localhost:5173"
+      url: import.meta.env.VITE_APP_URL
     }
   })
   setIsLoading(false)
